@@ -1,7 +1,10 @@
 module.exports = {
+    //AWorld 
+
+
     // Explain what function A does
     functionA() {    //Log drop off points
-        
+
     },
     // Explain what function B does
     functionB() {   // reward points system/calculations
