@@ -47,12 +47,12 @@ The dummy data is the `users` array in `Yuhao_AWorld_Ewasterecycling.js`. Each u
 | Feature | Function | Description |
 |---|---|---|
 | Activity Tracker | `logActivity(userId, type)` | Logs a sustainable activity (e.g. `cycling`), records the CO2 saved and awards points. |
-| Recycling Manager | `logRecycling(userId, item, weightKg)` | Logs an item for recycling. Checks the item is accepted and within the user's quota, then awards points by weight. Items that are not accepted are refused. |
-| Challenge Manager | `joinChallenge(userId, name)` | Joins a challenge such as `Plastic-Free Week`. |
-| Challenge Manager | `updateChallengeProgress(userId, name, amount)` | Adds to challenge progress. Completing a challenge awards bonus points once. |
-| Rewards Manager | `redeemReward(userId, reward)` | Redeems a reward if the user has enough points, deducting the points. |
+| Recycling Tracker | `logRecycling(userId, item, weightKg)` | Logs an item for recycling. Checks the item is accepted and within the user's quota, then awards points by weight. Items that are not accepted are refused and will not be counted to any points. |
+| Adding Challenges | `joinChallenge(userId, name)` | Adds a challenge such as `Plastic-Free Week`. |
+| Challenge Progress | `updateChallengeProgress(userId, name, amount)` | Adds to challenge progress. Completing a challenge awards bonus points once. |
+| Redeem Rewards | `redeemReward(userId, reward)` | Redeems a reward if the user has enough points, deducting the points. |
 
-Every function returns a short message, so errors such as an unknown user or not enough points are reported instead of crashing.
+Every function returns a short message, so errors such as an unknown user or not enough points are reported.
 
 ## Example
 
