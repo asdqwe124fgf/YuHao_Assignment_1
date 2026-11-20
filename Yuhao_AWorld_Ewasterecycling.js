@@ -3,21 +3,21 @@ module.exports = {
 
 
     // Explain what function A does
-    functionA() {    //Log drop off points
+    functionA() {    //Activity tracker
 
     },
     // Explain what function B does
-    functionB() {   // reward points system/calculations
+    functionB() {   // Recycling Manager
         console.log("Hello function B");
     },
 
-    functionC() {    //Recycling quotas
+    functionC() {    //Challenge Manager
         return 1+2;
     },
-    functionD() {    //Sustainable lifestyle tracker
+    functionD() {    //Rewards Manager
         return 1+2;
     },
-    functionE() {    //Eco-friendly rewards and redemption manager
+    functionE() {    //Sustainability Report
         return 1+2;
     },
 
