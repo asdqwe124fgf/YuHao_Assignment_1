@@ -7,30 +7,38 @@ Based on the [AWorld](https://www.aworld.org/) app, a UN-backed platform that he
 
 | File | Purpose |
 |---|---|
-| `aworld.js` | The node module. Contains the dummy data (users and their records), the rules, and the functions below. |
-| `app.js` | A demo app that requires `aworld.js` and calls every function. This is the file you start. |
+| `Yuhao_AWorld_Ewasterecycling.js` | The node module. Contains the dummy data (users and their records), the rules, and the functions below. |
+| `app.js` | A demo app that requires `Yuhao_AWorld_Ewasterecycling.js` and calls every function. This is the file you start. |
 
 ## How to run
 
 ```
-node app
+nodemon app
 ```
 
 No packages need to be installed.
 
 ## Data set
 
-The dummy data is the `users` array in `aworld.js`. Each user holds their own records:
+The dummy data is the `users` array in `Yuhao_AWorld_Ewasterecycling.js`. Each user holds their own records:
 
 ```javascript
 {
   userId: "U001",
-  name: "Alicia Tan",
-  points: 420,
-  activities:  [{ type, carbonSavedKg, points }],
-  recycling:   [{ item, weightKg, status }],
-  challenges:  [{ name, progress, target, completed }],
-  redemptions: [{ reward, pointsUsed }]
+            name: "Alicia Tan",
+            points: 420,
+            activities: [
+                { type, carbonSavedKg, points}
+            ],
+            recycling: [
+                { item, weightKg, status}
+            ],
+            challenges: [
+                { name, progress, target, completed}
+            ],
+            redemptions: [
+                { reward, pointsUsed}
+            ]
 }
 ```
 
